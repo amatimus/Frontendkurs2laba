@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сєчко Юліан Миколайович, ІК-42, ЛР-2, варіант 5</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table.var5 { border-collapse: collapse; width: 800px; }
+        table.var5 td { border: 2px solid #000; padding: 6px 10px; color: #111; vertical-align: middle; }
+
+        tr.row1 td { background-color: #058f8f; height: 70px; font-size: 22px; }
+        tr.row1:hover td { background-color: #f5f505; }
+
+        tr.row2 td { background-color: #f5f505; height: 32px; }
+        table.var5:has(tr.row2:hover) tr.row2 td { background-color: #058f8f; }
+    </style>
+</head>
+<body>
+    <h3>Завдання 1. Таблиця (варіант 5)</h3>
+    <table class="var5">
+        <tr class="row1">
+            <td style="width:25%">Сєчко</td>
+            <td colspan="2" style="width:25%">Юліан</td>
+            <td style="width:50%">Миколайович</td>
+        </tr>
+        <tr class="row2">
+            <td rowspan="2">ІК-42</td>
+            <td rowspan="2">ЛР-2</td>
+            <td></td>
+            <td rowspan="2">Варіант 5</td>
+        </tr>
+        <tr class="row2">
+            <td></td>
+        </tr>
+        <tr class="row3">
+            <td style="height:30px"></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>Завдання 2. Зображення (варіант 5)</h3>
+    <div class="images">
+        <div>
+            <p>1. За допомогою position</p>
+            <div class="pos-wrap">
+                <div class="circle pos red"></div>
+                <div class="circle pos blue"></div>
+                <div class="circle pos green"></div>
+            </div>
+        </div>
+        <div>
+            <p>2. За допомогою transform</p>
+            <div class="tr-wrap">
+                <div class="circle tr red"></div>
+                <div class="circle tr blue"></div>
+                <div class="circle tr green"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

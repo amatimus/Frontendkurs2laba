@@ -1,0 +1,34 @@
+.images { display: flex; gap: 120px; }
+
+.circle {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.red   { background-color: rgba(255, 0, 0, 0.5); }
+.blue  { background-color: rgba(0, 112, 192, 0.5); }
+.green { background-color: rgba(0, 176, 80, 0.5); }
+
+/* --- 1. Побудова за допомогою position --- */
+.pos-wrap {
+    position: relative;
+    width: 214px;
+    height: 198px;
+}
+.circle.pos { position: absolute; }
+.circle.pos.red   { left: 46px;  top: 0; }
+.circle.pos.blue  { left: 0;     top: 80px; }
+.circle.pos.green { left: 96px;  top: 80px; }
+
+/* --- 2. Побудова за допомогою transform --- */
+.tr-wrap {
+    display: grid;
+    width: 214px;
+    height: 198px;
+}
+.circle.tr { grid-area: 1 / 1; }
+.circle.tr.red   { transform: translate(46px, 0); }
+.circle.tr.blue  { transform: translate(0, 80px); }
+.circle.tr.green { transform: translate(96px, 80px); }
